@@ -2,289 +2,138 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>NutriOne Privacy Policy</title>
-
+<meta name="description" content="Privacy Policy for NutriOne (AI-powered nutrition and calorie tracking), published by Sagar Singh (developer &ldquo;Myx&rdquo;).">
 <style>
-    *{
-        margin:0;
-        padding:0;
-        box-sizing:border-box;
-        font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;
+  :root {
+    --accent: #16a34a;
+    --bg: #f6f7f9;
+    --card: #ffffff;
+    --text: #16181d;
+    --muted: #5f6572;
+    --border: #e4e6eb;
+    --glance: color-mix(in srgb, var(--accent) 8%, var(--card));
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --accent: #4ade80;
+      --bg: #0f1115;
+      --card: #171a20;
+      --text: #e8eaee;
+      --muted: #9aa1ad;
+      --border: #272b33;
     }
-
-    body{
-        background:#f8f8f8;
-        color:#222;
-        line-height:1.7;
-    }
-
-    .container{
-        max-width:850px;
-        margin:auto;
-        background:white;
-        padding:50px 30px;
-        box-shadow:0 8px 30px rgba(0,0,0,.06);
-        min-height:100vh;
-    }
-
-    h1{
-        font-size:38px;
-        margin-bottom:10px;
-    }
-
-    h2{
-        margin-top:35px;
-        margin-bottom:12px;
-        font-size:24px;
-    }
-
-    p{
-        margin-bottom:14px;
-    }
-
-    ul{
-        margin-left:22px;
-        margin-bottom:16px;
-    }
-
-    li{
-        margin-bottom:8px;
-    }
-
-    .updated{
-        color:#666;
-        margin-bottom:30px;
-    }
-
-    a{
-        color:#111;
-    }
-
-    footer{
-        margin-top:50px;
-        padding-top:20px;
-        border-top:1px solid #eee;
-        color:#666;
-        font-size:14px;
-    }
-
-    @media(max-width:600px){
-        .container{
-            padding:30px 20px;
-        }
-
-        h1{
-            font-size:30px;
-        }
-    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font: 16px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  }
+  .wrap { max-width: 760px; margin: 0 auto; padding: 0 16px; }
+  header { padding: 48px 0 24px; }
+  .app { color: var(--accent); font-weight: 700; font-size: 15px; letter-spacing: .02em; text-transform: uppercase; margin: 0; }
+  h1 { font-size: clamp(30px, 6vw, 40px); line-height: 1.15; margin: 6px 0 8px; letter-spacing: -.02em; }
+  .meta { color: var(--muted); margin: 0; font-size: 15px; }
+  .glance { background: var(--glance); border: 1px solid var(--border); border-left: 4px solid var(--accent);
+             border-radius: 12px; padding: 18px 22px; margin: 8px 0 28px; }
+  .glance h2 { font-size: 17px; margin: 0 0 6px; }
+  .glance ul { margin: 0; }
+  nav { margin: 0 0 28px; }
+  nav ol { columns: 2; column-gap: 32px; margin: 0; padding-left: 22px; color: var(--muted); font-size: 15px; }
+  @media (max-width: 560px) { nav ol { columns: 1; } }
+  section { background: var(--card); border: 1px solid var(--border); border-radius: 12px; padding: 22px 24px; margin-bottom: 14px; }
+  h2 { font-size: 20px; margin: 0 0 8px; letter-spacing: -.01em; }
+  h3 { font-size: 16px; margin: 16px 0 4px; }
+  p { margin: 8px 0; }
+  ul { margin: 8px 0; padding-left: 22px; }
+  li { margin: 4px 0; }
+  a { color: var(--accent); text-underline-offset: 2px; }
+  .contact-btn { display: inline-block; margin-top: 6px; padding: 10px 18px; border-radius: 999px; background: var(--accent);
+                  color: #fff; font-weight: 600; text-decoration: none; }
+  @media (prefers-color-scheme: dark) { .contact-btn { color: #0f1115; } }
+  footer { color: var(--muted); font-size: 14px; padding: 20px 0 48px; text-align: center; }
+  footer a { color: inherit; }
 </style>
 </head>
-
 <body>
+<div class="wrap">
+  <header>
+    <p class="app">NutriOne</p>
+    <h1>Privacy Policy</h1>
+    <p class="meta">Effective 29 September 2026 &middot; Sagar Singh (developer &ldquo;Myx&rdquo;)</p>
+  </header>
 
-<div class="container">
+  <div class="glance">
+    <h2>At a glance</h2>
+    <ul><li>Your account and food logs sync so they are available on all your devices.</li><li>Meal photos are analysed by AI and are not kept on my servers.</li><li>There are no ads, and your data is never sold or used for advertising.</li><li>You can export or delete your data in <em>Profile &rarr; Settings</em>.</li></ul>
+  </div>
 
-<h1>Privacy Policy</h1>
-<p class="updated"><strong>Effective Date:</strong> September 28, 2026</p>
+  <nav aria-label="Contents"><ol><li><a href="#who-is-responsible">Who is responsible</a></li><li><a href="#information-i-collect">Information I collect</a></li><li><a href="#camera-and-food-photos">Camera and food photos</a></li><li><a href="#how-i-use-information">How I use information</a></li><li><a href="#legal-bases">Legal bases</a></li><li><a href="#service-providers">Service providers</a></li><li><a href="#how-long-data-is-kept">How long data is kept</a></li><li><a href="#your-rights-and-choices">Your rights and choices</a></li><li><a href="#security">Security</a></li><li><a href="#children">Children</a></li><li><a href="#where-your-data-is-processed">Where your data is processed</a></li><li><a href="#changes-to-this-policy">Changes to this policy</a></li><li><a href="#contact">Contact</a></li></ol></nav>
 
-<p>
-Welcome to <strong>NutriOne</strong>. Your privacy is important to us.
-This Privacy Policy explains how we collect, use, store, and protect your information when you use the NutriOne mobile application ("App").
-</p>
+  <main>
+    <section id="who-is-responsible">
+      <h2>1. Who is responsible</h2>
+      <p>NutriOne is a nutrition and calorie tracking app with AI meal recognition. It is developed and published by <strong>Sagar Singh</strong>, an individual developer based in India, under the developer name <strong>&ldquo;Myx&rdquo;</strong>. NutriOne is not published by a company.</p><p>In this policy, &ldquo;I&rdquo;, &ldquo;me&rdquo; and &ldquo;my&rdquo; mean Sagar Singh. I decide how the information described here is used and I am responsible for it. Under India&rsquo;s Digital Personal Data Protection Act, 2023 I am the &ldquo;data fiduciary&rdquo;, and under the GDPR I am the &ldquo;data controller&rdquo;. I am also the grievance contact for NutriOne.</p>
+    </section>
+    <section id="information-i-collect">
+      <h2>2. Information I collect</h2>
+      <h3>Account</h3><ul><li>Your email address and an account ID.</li><li>Your name, if you provide it or share it through Sign in with Apple or Google. With Apple you can hide your real email address.</li><li>Passwords are handled by the authentication provider and are never visible to me.</li></ul><h3>Profile and health information you enter</h3><ul><li>Date of birth, gender, height, current, starting and target weight, activity level, weight goal and nutrition targets.</li><li>Your onboarding answers, preferred units and any referral code.</li></ul><h3>Tracking data</h3><ul><li>Foods and meals you log, with calories and nutrients, saved foods, recipes, exercise sessions and weight entries.</li></ul><h3>Usage and device information</h3><ul><li>App events such as &ldquo;food logged&rdquo; or &ldquo;scan completed&rdquo;, with non-identifying details such as meal type. They never include food names, photos, your name or your email.</li><li>Crash and error reports with technical details such as device model, OS version and app state.</li><li>The number of AI scans you make each day, used to apply the free-plan limit.</li></ul>
+    </section>
+    <section id="camera-and-food-photos">
+      <h2>3. Camera and food photos</h2>
+      <p>NutriOne uses the camera to scan meals and barcodes. When you scan a meal, the photo is sent to my server and to the AI provider to estimate its nutrition, and it is not kept on my servers after the estimate is returned. A copy stays on your device next to your log entry and is deleted when you log out or delete your account. For barcodes, only the barcode number is sent to Open Food Facts. You can deny camera access and log food manually.</p>
+    </section>
+    <section id="how-i-use-information">
+      <h2>4. How I use information</h2>
+      <ul><li>to calculate calorie and macro targets, store your logs and show progress and insights;</li><li>to sync your data across devices;</li><li>to estimate the nutrition of meal photos and look up barcodes;</li><li>to send reminders you turn on, which are scheduled on your device;</li><li>to keep the service secure, prevent abuse and enforce plan limits;</li><li>to understand usage and fix problems;</li><li>to send tips and offers, but only if you opted in.</li></ul><p>I do not sell your personal information, use it for advertising, or use your health information for anything other than providing NutriOne.</p>
+    </section>
+    <section id="legal-bases">
+      <h2>5. Legal bases</h2>
+      <p><strong>India:</strong> your consent when you create an account and enter information, and the legitimate uses allowed by the DPDP Act, 2023. <strong>EEA, UK and Switzerland:</strong> contract (to provide the features you use), explicit consent (for health information such as weight and food intake), legitimate interests (security, usage understanding, crash fixing) and consent (marketing). You can withdraw consent at any time by deleting the information or your account.</p>
+    </section>
+    <section id="service-providers">
+      <h2>6. Service providers</h2>
+      <ul><li><strong><a href="https://supabase.com/privacy" target="_blank" rel="noopener">Supabase</a></strong>: hosting, database and authentication.</li><li><strong><a href="https://www.anthropic.com/legal/privacy" target="_blank" rel="noopener">Anthropic</a></strong>: AI analysis of meal photos, sent without your name or email. Under its commercial terms, Anthropic does not train on this data and may keep it for a limited period for abuse monitoring.</li><li><strong><a href="https://sentry.io/privacy/" target="_blank" rel="noopener">Sentry</a></strong>: crash and error reporting, configured not to collect your name, email or IP-based identity.</li><li><strong><a href="https://world.openfoodfacts.org/privacy" target="_blank" rel="noopener">Open Food Facts</a></strong>: barcode lookups (barcode number only).</li><li><strong><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google</a></strong>: Google Sign-In, Google Play distribution and purchases.</li><li><strong><a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener">Apple</a></strong>: Sign in with Apple, App Store distribution and purchases.</li></ul><p>I may disclose information if the law requires it, or to protect the rights and safety of users.</p>
+    </section>
+    <section id="how-long-data-is-kept">
+      <h2>7. How long data is kept</h2>
+      <ul><li>Your account and tracking data are kept while your account is active.</li><li>When you delete your account, your account and synced data are removed from the database straight away. Encrypted backups are overwritten within a limited period.</li><li>Usage events and crash reports are kept only as long as they are useful, and are deleted with your account.</li><li>Meal photos are not stored on my servers.</li></ul>
+    </section>
+    <section id="your-rights-and-choices">
+      <h2>8. Your rights and choices</h2>
+      <p>Edit your details in <em>Profile &rarr; Personal Details, Goals and Nutrition Targets</em>, export your data in <em>Profile &rarr; Settings &rarr; Export Data</em>, and delete your account and data in <em>Profile &rarr; Settings &rarr; Delete Account</em>. Reminders, camera and notification permissions can be turned off at any time. California residents: I do not sell or share personal information for cross-context behavioural advertising.</p><p>Depending on where you live, you may also have the right to:</p><ul><li>access the personal data I hold about you and get a copy in a portable format;</li><li>correct information that is wrong or incomplete;</li><li>have your data erased;</li><li>restrict or object to certain processing;</li><li>withdraw consent where processing is based on consent;</li><li>nominate someone to exercise your rights if you die or become unable to (India).</li></ul><p>To make a request, <a href="mailto:sagarrawatuk@gmail.com?subject=NutriOne%20privacy">contact me</a>. I will reply within 30 days and may need to confirm that the data is yours first. If you are not satisfied with my answer, you can complain to the Data Protection Board of India or, in the EEA or UK, to your local data protection authority.</p>
+    </section>
+    <section id="security">
+      <h2>9. Security</h2>
+      <p>Data is encrypted in transit, your sign-in session is kept in your device&rsquo;s secure storage, and the database restricts each account to its own data. No system is completely secure, but if a breach affects your data I will notify you and the relevant authorities where the law requires.</p>
+    </section>
+    <section id="children">
+      <h2>10. Children</h2>
+      <p>NutriOne is not intended for anyone under 13 (or the higher minimum age where you live). I do not knowingly collect personal information from anyone under 13. If you believe a child has provided information through NutriOne, <a href="mailto:sagarrawatuk@gmail.com?subject=NutriOne%20privacy">contact me</a> and I will delete it.</p>
+    </section>
+    <section id="where-your-data-is-processed">
+      <h2>11. Where your data is processed</h2>
+      <p>I am based in India. The service providers named above may store or process data in other countries, including the United States and the European Union. Where data leaves the EEA or UK, the transfer relies on safeguards such as the European Commission&rsquo;s Standard Contractual Clauses in the provider&rsquo;s terms.</p>
+    </section>
+    <section id="changes-to-this-policy">
+      <h2>12. Changes to this policy</h2>
+      <p>If I change this policy, I will update the date at the top of this page. For significant changes I will also let you know in NutriOne before they take effect.</p>
+    </section>
+    <section id="contact">
+      <h2>13. Contact</h2>
+      <p>For questions about this policy, data requests or complaints, <a href="mailto:sagarrawatuk@gmail.com?subject=NutriOne%20privacy">contact me by email</a>. I built the app, so I will answer your message myself.</p><p>Sagar Singh (developer &ldquo;Myx&rdquo;), India</p>
+    </section>
+    <section>
+      <a class="contact-btn" href="mailto:sagarrawatuk@gmail.com?subject=NutriOne%20privacy">Contact us</a>
+    </section>
+  </main>
 
-<p>
-By using NutriOne, you agree to the practices described in this Privacy Policy.
-</p>
-
-<h2>1. Information We Collect</h2>
-
-<h3>Information You Provide</h3>
-
-<ul>
-<li>Name (if provided)</li>
-<li>Email address (for account creation and sign-in)</li>
-<li>Date of birth</li>
-<li>Height and weight</li>
-<li>Fitness and nutrition goals</li>
-<li>Referral code (optional)</li>
-</ul>
-
-<h3>Nutrition and Food Data</h3>
-
-<p>When using NutriOne, you may provide:</p>
-
-<ul>
-<li>Photos of meals for AI food recognition</li>
-<li>Food logs</li>
-<li>Calorie and macronutrient entries</li>
-<li>Weight history</li>
-<li>Exercise entries</li>
-</ul>
-
-<h3>Automatically Collected Information</h3>
-
-<ul>
-<li>Device information</li>
-<li>Operating system version</li>
-<li>App version</li>
-<li>Crash logs</li>
-<li>Diagnostic information</li>
-</ul>
-
-<h2>2. Camera Access</h2>
-
-<p>
-NutriOne requests camera permission so you can scan meals using AI food recognition.
-Photos are only used to analyze food and improve your nutrition tracking experience.
-</p>
-
-<p>
-You can deny camera permission and continue using manual food entry features.
-</p>
-
-<h2>3. Health Information</h2>
-
-<p>
-If you choose to connect Apple Health or Android Health Connect, NutriOne may access health-related information such as:
-</p>
-
-<ul>
-<li>Weight</li>
-<li>Steps</li>
-<li>Workouts</li>
-<li>Active calories</li>
-</ul>
-
-<p>
-Health data is accessed only after your explicit permission and is used solely to provide requested features.
-</p>
-
-<h2>4. How We Use Your Information</h2>
-
-<p>We use your information to:</p>
-
-<ul>
-<li>Provide AI food recognition</li>
-<li>Calculate calorie and macronutrient goals</li>
-<li>Track nutrition progress</li>
-<li>Display personalized insights</li>
-<li>Sync your data across devices</li>
-<li>Improve app performance</li>
-<li>Provide customer support</li>
-<li>Manage subscriptions</li>
-</ul>
-
-<h2>5. AI Food Recognition</h2>
-
-<p>
-When you scan food, images may be processed using AI technology to identify food items and estimate nutritional values.
-These estimates are intended for informational purposes and may not always be perfectly accurate.
-</p>
-
-<h2>6. Data Sharing</h2>
-
-<p>We do not sell your personal information.</p>
-
-<p>We may share information with trusted service providers necessary to operate the App, including:</p>
-
-<ul>
-<li>Authentication providers (Google Sign-In, Apple Sign-In)</li>
-<li>Subscription management (RevenueCat)</li>
-<li>Cloud storage providers</li>
-<li>Analytics providers</li>
-<li>Crash reporting services</li>
-</ul>
-
-<p>These providers process data only as needed to provide their services.</p>
-
-<h2>7. Data Security</h2>
-
-<p>We implement reasonable security measures including:</p>
-
-<ul>
-<li>Encrypted communication (HTTPS)</li>
-<li>Secure authentication</li>
-<li>Protected cloud storage</li>
-<li>Access controls</li>
-</ul>
-
-<p>
-No method of transmission or storage is completely secure, but we strive to protect your information.
-</p>
-
-<h2>8. Data Retention</h2>
-
-<p>We retain your information while your account remains active or as needed to provide our services.</p>
-
-<p>You may request deletion of your account and associated data at any time.</p>
-
-<h2>9. Your Rights</h2>
-
-<p>Depending on your location, you may have the right to:</p>
-
-<ul>
-<li>Access your data</li>
-<li>Correct inaccurate information</li>
-<li>Delete your account</li>
-<li>Export your data</li>
-<li>Withdraw permissions</li>
-</ul>
-
-<h2>10. Children's Privacy</h2>
-
-<p>
-NutriOne is not intended for children under the age of 13.
-We do not knowingly collect personal information from children under 13.
-If we learn that such information has been collected, we will delete it promptly.
-</p>
-
-<h2>11. Third-Party Services</h2>
-
-<p>NutriOne may integrate with third-party services, including:</p>
-
-<ul>
-<li>Google Sign-In</li>
-<li>Apple Sign-In</li>
-<li>Apple Health</li>
-<li>Health Connect</li>
-<li>RevenueCat</li>
-<li>Google Play Billing</li>
-<li>Firebase (Analytics and Crash Reporting)</li>
-</ul>
-
-<p>The privacy practices of these providers are governed by their own privacy policies.</p>
-
-<h2>12. International Data Transfers</h2>
-
-<p>
-Your information may be processed or stored in countries outside your own.
-We take reasonable measures to protect your information during such transfers.
-</p>
-
-<h2>13. Changes to This Privacy Policy</h2>
-
-<p>
-We may update this Privacy Policy from time to time.
-Changes become effective when posted on this page.
-The updated effective date will always appear at the top.
-</p>
-
-<h2>14. Contact Us</h2>
-
-<p>If you have questions about this Privacy Policy, contact us:</p>
-
-<p>
-<strong>NutriOne Support</strong><br>
-Email: sagarrawatuk@gmail.com<br>
-Website: https://sagarrawatuk.github.io/
-</p>
-
-<footer>
-© 2026 NutriOne. All rights reserved.
-</footer>
-
+  <footer>
+    &copy; 2026 Sagar Singh &middot; Published as &ldquo;Myx&rdquo; &middot; <a href="mailto:sagarrawatuk@gmail.com?subject=NutriOne%20privacy">Contact us</a>
+  </footer>
 </div>
-
 </body>
 </html>
